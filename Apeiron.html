@@ -4,85 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport"content="width=device-width,intital-scale=1.0">
     <link rel="stylesheet"href="Apeiron.css"/>
-      <script type="text/javascript">
-      alert("Hey");
-      alert("");
-      </script>
-
+      <script src="Apeiron.js"></script>
       <title>Apeiron</title>
-    
-   </head>
-   <body>
-    <main>
-      <script type="text/javascript">
-        document.oncontextmenu = new Function("return false");
-        oncontextmenu="return false;"
-        document.body.oncopy = function(){
-        event.returnValue=false;
-        }
-        function iEsc(){ return false; }
-       function iRec(){ return true; }
-        function DisableKeys() {
-        if(event.ctrlKey || event.shiftKey || event.altKey) {
-        window.event.returnValue=false;
-        iEsc();}
-        }
-        document.ondragstart=iEsc;
-        document.onkeydown=DisableKeys;
-        document.oncontextmenu=iEsc;
-        if (typeof document.onselectstart !="undefined")
-        document.onselectstart=iEsc;
-        else{
-        document.onmousedown=iEsc;
-        document.onmouseup=iRec;
-        }
-        function DisableRightClick(qsyzDOTnet){
-        if (window.Event){
-        if (qsyzDOTnet.which == 2 || qsyzDOTnet.which == 3)
-        iEsc();}
-        else
-        if (event.button == 2 || event.button == 3){
-        event.cancelBubble = true
-        event.returnValue = false;
-        iEsc();}
-        }
-      </script>
-     
-    <div class="container">
-      <h1>Apeiron</h1>
-      <div class="marker one"><div class="sleeve"></div></div> 
-      <div class="marker two "></div>
-      <div class="marker three "></div>
-      <div class="marker four "></div>
-      <div class="marker five"></div>
-    </div>
-    <div class="imagegroup">
+
+  </head>
+  <body>
+      <main>
+
+
+        <div class="container">
+          <h1>Apeiron</h1>
+        <div class="marker one"><div class="sleeve"></div></div> 
+        <div class="marker two "></div>
+        <div class="marker three "></div>
+        <div class="marker four "></div>
+        <div class="marker five"></div>
+        </div>
+        <div class="imagegroup">
       
-      <a href="https://www.instagram.com/shibari_vision/"target="_blank"><img class="card" src="Vision_1.jpg"alt="Apeiron."/></a>
-      <video autoplay loop muted id="myVideo">
-        <source src="myvideo.mp4"type="video/mp4">
+          <a href="https://www.instagram.com/shibari_vision/"target="_blank"><img class="card" src="Vision_1.jpg"alt="Apeiron."/></a>
+          <video autoplay loop muted id="myVideo">
+          <source src="myvideo.mp4"type="video/mp4">
         Your browser does not support HTML5 video. 
-      </video>
-    </div>  
-    <div class="container">
-      <div class="imagegroup">
+          </video>
+        </div>  
+         <div class="container">
+        <div class="imagegroup">
         <div class="item"><a href="G.html"target="_blank">GAIA</a></div>
         <div class="item">GAIA</div>
         <div class="item">GAIA</div>
-      <video autoplay loop muted id="myVideo-1">
-        <img class="v2" src=""alt="GAIA"/>
-        <source src="myvideo 1.mp4"type="video/mp4">
+          <video autoplay loop muted id="myVideo-1">
+           <img class="v2" src=""alt="GAIA"/>
+            <source src="myvideo 1.mp4"type="video/mp4">
         Your browser does not support HTML5 video.
-        <h2 class="heading">GAIA</h2>
-      </video>
-      </div>
-    </div>  
-    <div class="content">
+            <h2 class="heading">GAIA</h2>
+          </video>
+         </div>
+        </div>  
+        <div class="content">
       <footer>
         <p class="address">instagram:</p>
         <a href="https://www.instagram.com/shibari_vision/" target="_blank">Shibari_vision</a>
       </footer>
     </div>
    </main>
+   <script src="Apeiron.js"></script>
+    
    </body>
  </html>
