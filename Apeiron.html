@@ -3,50 +3,50 @@
    <head>
     <meta charset="UTF-8">
     <meta name="viewport"content="width=device-width,intital-scale=1.0">
-    <link rel="stylesheet"href="VISION STYLE.css"/>
-    <script type="text/javascript">
+    <link rel="stylesheet"href="Apeiron.css"/>
+      <script type="text/javascript">
       alert("Hey");
       alert("");
-    </script>
+      </script>
 
       <title>Apeiron</title>
     
    </head>
    <body>
     <main>
-    <script type="text/javascript">
-      document.oncontextmenu = new Function("return false");
-oncontextmenu="return false;"
-document.body.oncopy = function(){
-  event.returnValue=false;
-}
-function iEsc(){ return false; }
-function iRec(){ return true; }
-function DisableKeys() {
-if(event.ctrlKey || event.shiftKey || event.altKey) {
-window.event.returnValue=false;
-iEsc();}
-}
-document.ondragstart=iEsc;
-document.onkeydown=DisableKeys;
-document.oncontextmenu=iEsc;
-if (typeof document.onselectstart !="undefined")
-document.onselectstart=iEsc;
-else{
-document.onmousedown=iEsc;
-document.onmouseup=iRec;
-}
-function DisableRightClick(qsyzDOTnet){
-if (window.Event){
-if (qsyzDOTnet.which == 2 || qsyzDOTnet.which == 3)
-iEsc();}
-else
-if (event.button == 2 || event.button == 3){
-event.cancelBubble = true
-event.returnValue = false;
-iEsc();}
-}
-    </script>
+      <script type="text/javascript">
+        document.oncontextmenu = new Function("return false");
+        oncontextmenu="return false;"
+        document.body.oncopy = function(){
+        event.returnValue=false;
+        }
+        function iEsc(){ return false; }
+       function iRec(){ return true; }
+        function DisableKeys() {
+        if(event.ctrlKey || event.shiftKey || event.altKey) {
+        window.event.returnValue=false;
+        iEsc();}
+        }
+        document.ondragstart=iEsc;
+        document.onkeydown=DisableKeys;
+        document.oncontextmenu=iEsc;
+        if (typeof document.onselectstart !="undefined")
+        document.onselectstart=iEsc;
+        else{
+        document.onmousedown=iEsc;
+        document.onmouseup=iRec;
+        }
+        function DisableRightClick(qsyzDOTnet){
+        if (window.Event){
+        if (qsyzDOTnet.which == 2 || qsyzDOTnet.which == 3)
+        iEsc();}
+        else
+        if (event.button == 2 || event.button == 3){
+        event.cancelBubble = true
+        event.returnValue = false;
+        iEsc();}
+        }
+      </script>
      
     <div class="container">
       <h1>Apeiron</h1>
