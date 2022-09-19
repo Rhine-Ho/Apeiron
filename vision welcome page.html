@@ -9,55 +9,13 @@
 
     </head>
  
-    <body> 
-      
-        <script type="x-shader/x-vertex" id="vertexshader">
-
-            attribute float size;
-            attribute vec3 customColor;
-            varying vec3 vColor;
-          
-            void main() {
-          
-              vColor = customColor;
-              vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
-              gl_PointSize = size * ( 300.0 / -mvPosition.z );
-              gl_Position = projectionMatrix * mvPosition;
-          
-            }
-          
-          </script>
-          <script type="x-shader/x-fragment" id="fragmentshader">
-          
-           uniform vec3 color;
-           uniform sampler2D pointTexture;
-          
-           varying vec3 vColor;
-          
-           void main() {
-          
-             gl_FragColor = vec4( color * vColor, 1.0 );
-             gl_FragColor = gl_FragColor * texture2D( pointTexture, gl_PointCoord );
-          
-           }
-          </script>
-      
-          
-          <div id="magic"></div>
-          <div class="playground">
-            <div class="bottomPosition">
-              <h1 class="describe">uncertain <br> Creative </h1>
-            </div>
-          </div>
-
-         
-           <header>
-              <div class="hideAndsee">
-                <h1 class="describe">uncertain <br> Creative </h1>
-              </div>
-            
-              <h1><a href="vision of shibari_1.html" class="button">Apeiron.<a></h1>
-          </header>
-           <div class="environment"><div>
+    <body>          
+      <div class="hideAndsee">
+        <h1 class="describe">uncertain <br> Creative </h1>
+      </div>
+      <div>     
+        <h1><a href="vision of shibari_1.html" class="button">Apeiron.<a></h1>
+      </div>   
+      <div class="environment"><div>
     </body>
 </html>
