@@ -4,75 +4,98 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  
+
 }
 
 body {
-  display: flex;
+  font-family: sans-serif;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background: #000;
 }
 
+
 .environment {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  box-shadow: inset 0px 0px 200px 300px ;
-  filter: opacity(90%);
+  box-shadow: inset 0px 0px 200px 300px;
+  filter: opacity(60%);
   pointer-events: none;
-  z-index:auto;
-  }
-
-.hideAndsee{
-font-size: 20%;
-
-  position:relative;
-  width: 10%;
-  height:10%; 
+  z-index: auto;
 }
 
-.hideAndsee :hover{
+@media (max-width: 640px) {
+  .body {
+    box-shadow: inset 0px 0px 600px 0px;
+  }
+}
+
+@media (max-width: 750px) {
+  .body {
+    box-shadow: inset 0px 0px 400px 200px;
+  }
+}
+
+.playground {
+
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.hideAndsee h3 {
+  cursor: s-resize;
+  font: 4vmin /4vmin Alkalami, sans-serif;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.hideAndsee :hover {
   color: #ccc;
   text-shadow: 0 0 5px #f2f7f5,
-              0 0 25px #f2f7f5,
-              0 0 50px #050505,
-              0 0 100px #050505;
+    0 0 25px #f2f7f5,
+    0 0 50px #050505,
+    0 0 100px #050505;
 }
 
-header{
-  font-size: 35px;
+.home {
   position: relative;
-  padding: 50px auto;
-  z-index: index 1;
+  padding: 50% auto;
+
 }
 
-header .h1{
-  font-size: 3em;
+.home h1 {
+  font: 15vmin /15vmin Alkalami, sans-serif;
   font-weight: 500;
   color: #222;
   letter-spacing: 5px;
-  cursor: help;
   text-transform: uppercase;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
-  h1 :hover{
-    color: #ccc;
-    text-shadow: 0 0 5px #f2f7f5,
-                0 0 25px #f2f7f5,
-                0 0 50px #050505,
-                0 0 100px #050505;
-  
-  
-  }
+h1 :hover {
+  color: #ccc;
+  text-shadow: 0 0 5px #f2f7f5,
+    0 0 25px #f2f7f5,
+    0 0 50px #050505,
+    0 0 100px #050505;
 
-a{
+
+}
+
+a {
   color: white;
-   cursor: help;
-   text-decoration:none;
+  cursor: help;
+  text-decoration: none;
 }
