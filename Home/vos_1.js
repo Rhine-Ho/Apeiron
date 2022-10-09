@@ -1,6 +1,5 @@
 
-alert('Hey');
-alert("");
+importScripts
 
 document.oncontextmenu = new Function("return false");
     oncontextmenu="return false;"
