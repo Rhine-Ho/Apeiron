@@ -4,11 +4,12 @@
 * {
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
+  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -16,45 +17,24 @@ body {
 }
 
 
-.environment {
+#environment {
   position: fixed;
-  width: 100%;
-  height: 100%;
-  box-shadow: inset 0px 0px 200px 300px;
-  filter: opacity(60%);
-  pointer-events: none;
-  z-index: auto;
-}
-
-@media (max-width: 640px) {
-  .body {
-    box-shadow: inset 0px 0px 600px 0px;
-  }
-}
-
-@media (max-width: 750px) {
-  .body {
-    box-shadow: inset 0px 0px 400px 200px;
-  }
-}
-
-.playground {
-
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  display: flex;
   top: 0;
   left: 0;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0px 0px 400px 300px;
+  filter: opacity(60%);
+  pointer-events: none;
+ 
 }
 
+.hideAndsee{
+  position: relative;
+
+}
 .hideAndsee h3 {
+  
   cursor: s-resize;
   font: 4vmin /4vmin Alkalami, sans-serif;
   display: flex;
@@ -62,6 +42,7 @@ body {
 }
 
 .hideAndsee :hover {
+
   color: #ccc;
   text-shadow: 0 0 5px #f2f7f5,
     0 0 25px #f2f7f5,
@@ -75,11 +56,19 @@ body {
 
 }
 
+
+
+.home {
+  
+  position:relative;
+  padding: 50% auto;
+
+}
+
 .home h1 {
-  font: 15vmin /15vmin Alkalami, sans-serif;
-  font-weight: 500;
-  color: #222;
-  letter-spacing: 5px;
+  font: 10vmin /10vmin Alkalami, sans-serif;
+  font-weight: 600;
+  letter-spacing: 4px;
   text-transform: uppercase;
   transition: 0.2s;
 }
