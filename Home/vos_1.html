@@ -1,109 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-    <!--function-->
-      <meta charset="UTF-8">
-      <meta name="viewport"content="width=device-width,intital-scale=1.0">
-    <!--search engine-->
-      <meta about="/tags/Apeiron" typeof="skos:Concept" property="rdfs:label skos:prefLabel" content="Apeiron">
-      <meta property="og:title" content="Apeiron">
-      <meta property="web:title" content="The multiple possibilty of life.">
-      <meta property="og:MeaningOfApeiron" content="the beginning or ultimate reality (arche) is eternal and infinite, or boundless (apeiron), subject to neither old age nor decay, which perpetually yields fresh materials from which everything we can perceive is derived.Everything is generated from apeiron and then it is destroyed by going back to apeiron,">
-      <meta property="first"
-      <meta property="bonda" content="The multiple possibilty of life.">
-      <meta property=""
 
-    <script>
-       alert("Hey");       
-       
+<head>
+  <!--function-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,intital-scale=1.0">
+  <!--search engine-->
+  <meta about="/tags/Apeiron" typeof="skos:Concept" property="rdfs:label skos:prefLabel" content="Apeiron">
+  <meta property="og:title" content="Apeiron">
+  <meta property="web:title" content="The multiple possibilty of life.">
+  <meta property="og:MeaningOfApeiron"
+    content="the beginning or ultimate reality (arche) is eternal and infinite, or boundless (apeiron), subject to neither old age nor decay, which perpetually yields fresh materials from which everything we can perceive is derived.Everything is generated from apeiron and then it is destroyed by going back to apeiron,">
+  <meta property="web" content="">
+  <meta property="B" content="The multiple possibilty of life.">
 
-       alert("Do you really know about yourself?"); 
-    </script>
-    <script type="text/javascript" src="vos_1.js"></script>
-   
-      <title>Apeiron</title>    
-    <!--stylesheet-->
-    <link rel="stylesheet"href="vos_1.css"/>
-    <link rel="stylesheet"href="vos_2.css"/>
-    <link rel="stylesheet"href="vos_3.css"/>
+  <title>Apeiron</title>
+  <!--stylesheet-->
+  <link rel="stylesheet" href="vos_1.css" />
+  <link rel="stylesheet" href="vos_2.css" />
+  <link rel="stylesheet" href="vos_3.css" />
+  <script>
+    alert("Hey");
 
-   </head>
-   <body>
-    <!--RWD-->
-    <div class="browser">
-      <div class="browser view1"></div>
-      <div class="browser view2"></div>
-      <div class="browser view3"></div>
-      <div class="browser view4"></div>
+
+    alert("Do you really know about yourself?"); 
+  </script>
+
+  <script type="x-shader/x-fragment" id="fragmentshader" src="vos_1.js">
+      attribute float size;
+      attribute vec3 customColor;
+      varying vec3 vColor;
+
+      void main() {
+
+      vColor = customColor;
+      vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+      gl_PointSize = size * ( 300.0 / -mvPosition.z );
+      gl_Position = projectionMatrix * mvPosition;
+
+      }
+     </script>
+</head>
+
+<body>
+  <!--RWD-->
+  <div class="browser">
+    <div class="browser view1"></div>
+    <div class="browser view2"></div>
+    <div class="browser view3"></div>
+    <div class="browser view4"></div>
+  </div>
+  <!--RWD-->
+  <!--navbar-->
+  <header>
+    <div class="overlay-navigation">
+      <nav role="navigation">
+        <ul>
+          <li><a href="#" data-content="The beginning">Home</a></li>
+          <li><a href="#" data-content="Curious?">About</a></li>
+          <li><a href="#" data-content="I got game">Skills</a></li>
+          <li><a href="#" data-content="Only the finest">Works</a></li>
+          <li><a href="#" data-content="Don't hesitate">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <!--RWD-->
-    <!--navbar-->
-    <header>
 
-      <div class="overlay-navigation">
-        <nav role="navigation">
-          <ul>
-            <li><a href="#" data-content="The beginning">Home</a></li>
-            <li><a href="#" data-content="Curious?">About</a></li>
-            <li><a href="#" data-content="I got game">Skills</a></li>
-            <li><a href="#" data-content="Only the finest">Works</a></li>
-            <li><a href="#" data-content="Don't hesitate">Contact</a></li>
-          </ul>
-        </nav>
+    <section class="home">
+      <a href="#" target="_blank">Click for more web version design.</a>
+      <div class="open-overlay">
+        <span class="bar-top"></span>
+        <span class="bar-middle"></span>
+        <span class="bar-bottom"></span>
       </div>
-
-      <section class="home">
-        <a href="#" target="_blank">Click for more web version design.</a>
-          <div class="open-overlay">
-            <span class="bar-top"></span>
-            <span class="bar-middle"></span>
-            <span class="bar-bottom"></span>
-          </div>
-      </section>
+    </section>
 
   </header>
-<!-- /#page-header -->
-<!--second navbar-->
-    // text //
-    <div class="n2">
-        <h1>Apeiron</h1>
-          <div class="sleeve">
-            <span class="one"></span>
-            <div class="two "></div>
-            <div class="three "></div>
-            <div class="four "></div>
-            <div class="five"></div>
-          </div>
-    </div>
-    // text //
-    <!--passzone-->
-    <div class="imagegroup">
-       <video autoplay loop muted id="myVideo">
-       <source src="myvideo.mp4"type="video/mp4">
-        Your browser does not support HTML5 video. 
-       </video>
-    </div>  
+  <!-- /#page-header -->
+  <!--second navbar-->
 
-    <!--page second content-->
-    <header>
-      <div class="item"><a href="G.html"target="_blank">GAIA</a></div>
-      <div class="imagegroup_2">
-        <video autoplay loop muted id="myVideo-1">
-        <img class="v2" src=""alt="GAIA"/>
-        <source src="myvideo 1.mp4"type="video/mp4">
-        Your browser does not support HTML5 video.
-        <h2 class="heading">GAIA</h2>
-        </video>
-      </div>  
-    </header>
+  <div class="light">
+    <div></div>
+    <div></div>
+    <div></div>
+    <a href="#">Apeiron</a>
+  </div>
 
-      <!--add-->
-    <div class="content">
-      <footer>
-        <p class="address">instagram:</p>
-        <a href="https://www.instagram.com/shibari_vision/" target="_blank">Shibari_vision</a>
-      </footer>
+  <!--passzone-->
+  <div class="imagegroup">
+    <video autoplay loop muted id="myVideo">
+      <source src="myvideo.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!--page second content-->
+  <header>
+    <div class="imagegroup_2">
+      <video autoplay loop muted id="myVideo2">
+        <source src="myvideo 1.mp4" type="video/mp4">
+
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item3"></div>
+        <div><a class="item3_1" href="G.html" target="_blank">GAIA</a></span>
+        </div>
+
+      </video>
     </div>
-   
-   </body>
- </html>
+  </header>
+
+  <!--add-->
+  <div class="content">
+    <footer>
+      <p class="address">instagram:</p>
+      <a href="https://www.instagram.com/shibari_vision/" target="_blank">Shibari_vision</a>
+    </footer>
+  </div>
+  <script type="text/javascript" src="vos_1.js"></script>
+</body>
+
+</html>
