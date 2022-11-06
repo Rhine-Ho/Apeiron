@@ -33,8 +33,7 @@ body {
   position: relative;
 
 }
-.hideAndsee h3 {
-  
+.hideAndsee h1 {
   cursor: s-resize;
   font: 4vmin /4vmin Alkalami, sans-serif;
   display: flex;
